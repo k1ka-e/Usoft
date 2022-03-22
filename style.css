@@ -1448,6 +1448,10 @@ footer .icon-links a {
 	object-fit: contain;
 }
 
+.burger__menu {
+	display: none;
+}
+
 /*Media 
 ===================*/
 
@@ -1459,4 +1463,8 @@ footer .icon-links a {
 	.header__phone {
 		display: none;
 	}
-}
+
+/*burger 
+===================*/
+
+}	
