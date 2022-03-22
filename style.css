@@ -1447,3 +1447,16 @@ footer .icon-links a {
 	max-height: auto;
 	object-fit: contain;
 }
+
+/*Media 
+===================*/
+
+@media (max-width: 991px) {
+	.header__nav {
+		display: none;
+	}
+
+	.header__phone {
+		display: none;
+	}
+}
