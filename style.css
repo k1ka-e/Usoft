@@ -231,22 +231,17 @@ body {
   align-items: center;
 }
 
-.swiper-button-next:after,
-.swiper-button-prev:after {
-  font-size: 20px;
-}
-
 :root {
   --swiper-theme-color: #fff;
 }
 
 .img {
-  width: 632px;
+  width: 50%;
   height: auto;
 }
 
 .img1 {
-  width:  50%;
+  width: 50%;
   height: auto;
 }
 
@@ -260,9 +255,9 @@ body {
 
 .slider__leftside {
   padding-top: 30px;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .swiper-text h1 {
@@ -1374,10 +1369,10 @@ footer .icon-links a {
 
 .menu__body {
   display: none;
-	flex-wrap: wrap;
-	padding-left: 0;
-	margin-bottom: 0;
-	list-style: none;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
 }
 
 .header__burger {
@@ -1387,16 +1382,28 @@ footer .icon-links a {
 /*Media 
 ===================*/
 
-@media  (max-width: 1199px) {
-	.section1 {
+@media (max-width: 1199px) {
+  .section1 {
     padding-top: 75px;
   }
-  .swiper-button-next, .swiper-button-prev {
-   display: none;
-	}
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+
+  swiper-text h1 {
+    font-size: 47px
+  }
+
+  .swiper-text h3 {
+    font-size: 18px;
+  }
+
+  .img {
+    width: 527px;
+  }
+
 }
-
-
 
 @media (max-width: 991px) {
   .header__nav {
@@ -1466,7 +1473,7 @@ footer .icon-links a {
   }
 
   .menu__body {
-		display: block;
+    display: block;
     flex-direction: column;
     position: fixed;
     top: 0;
@@ -1474,7 +1481,7 @@ footer .icon-links a {
     width: 100%;
     text-align: center;
     min-height: 100vh;
-		background-color: #291258;
+    background-color: #291258;
     padding: 100px 30px 30px 30px;
     transition: left 0.3s ease 0s;
     overflow: auto;
@@ -1500,17 +1507,36 @@ footer .icon-links a {
     z-index: 2;
   }
   .nav__link {
-    margin-bottom: 30px;
+    padding-bottom: 30px;
     font-size: 24px;
   }
 
-.menu__phone {
-  text-decoration: none;
-  color: #fff;
-}	
+  .menu__phone {
+    text-decoration: none;
+    color: #fff;
+  }
 
-.header__lang {
-  justify-content: center;
-}
+  .header__lang {
+    justify-content: center;
+  }
 
+  .swiper-text h1 {
+    font-size: 42px
+  }
+
+  .swiper-text h3 {
+    font-size: 22px;
+  }
+
+  .img {
+    width: 506px;
+  }
+
+  .blog__item {
+  
+  }
+
+  .services__content {
+    width: 50%;
+  }
 }
