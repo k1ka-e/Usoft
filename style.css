@@ -1518,12 +1518,15 @@ footer .icon-links a {
 
   .menu__body::before {
     content: "";
+    padding-top: 0;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
     position: fixed;
+    transition: top .5s;
     width: 100%;
-    top: 0;
-    left: 0;
-    height: 100px;
-    z-index: 2;
+    z-index: 101;
   }
 
   .nav__menu {
@@ -1540,6 +1543,19 @@ footer .icon-links a {
     font-size: 20px;
     color: #fff!important;
     text-align: center;
+    width: 100%;
+  }
+
+  .menu__link.active {
+    color: #fff;
+  }
+  
+  .menu__link:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .menu__link:hover:after {
     width: 100%;
   }
 
@@ -1586,5 +1602,31 @@ footer .icon-links a {
   .services__content {
     width: 50%;
   }
+
+}
+
+@media (max-width: 767px){
+  .swiper-text h1 {
+    font-size: 25px
+  }
+
+  .swiper-text h3 {
+    font-size: 15px;
+  }
+
+  .img {
+    width: 320px;
+  }
+
+  .services__content {
+    width: 100%;
+  }
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (max-width: 414px) {
 
 }
