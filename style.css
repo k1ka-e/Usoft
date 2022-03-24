@@ -58,10 +58,11 @@ body {
 .container {
   max-width: 1200px;
   width: 100%;
-  columns: "";
   margin: 0 auto;
-  padding: 0 15px;
+  columns: "";
   padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media (max-width: 1200px) {
@@ -258,6 +259,13 @@ body {
   flex-direction: column;
   height: 100%;
   display: inline-block;
+}
+
+.slider__leftside {
+  padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .swiper-text h1 {
@@ -1375,6 +1383,10 @@ footer .icon-links a {
 	list-style: none;
 }
 
+.header__burger {
+  display: none;
+}
+
 /*Media 
 ===================*/
 
@@ -1396,6 +1408,10 @@ footer .icon-links a {
 
   .header__phone {
     display: none;
+  }
+
+  .header__burger {
+    display: block;
   }
 
   /*burger 
